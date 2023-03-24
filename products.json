@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "image": "images/ux.png",
+        "name": "Responsive design with Bootstrap",
+        "price": "100",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 2,
+        "image": "images/html.png",
+        "name": "HTML - an introduction",
+        "price": "300",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 3,
+        "image": "images/css.png",
+        "name": "CSS - an introduction",
+        "price": "220",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 4,
+        "image": "images/javascript.png",
+        "name": "JavaScript - an introduction",
+        "price": "150",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    }
+]
