@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "node.js": "^0.0.1-security"
+  }
+}

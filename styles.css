@@ -1,0 +1,28 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 30%;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.popUp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 1px solid #000;
+  padding: 250px;
+  z-index: 999;
+}
+
+.exit {
+  font-size: 30px;
+  border: hidden;
+  background: #fff;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
