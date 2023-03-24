@@ -11,14 +11,13 @@ fetch("products.json", {
     let placeholder = document.querySelector("#data-output")
     let out = "";
     for (const product of products) {
-        // console.log(product);
         out += `
             <div class ="container card"> 
                 <img src="${product.image}">
-                <h4>${product.name}</h4>
+                <h4 class="image">${product.name}</h4>
                 <h4>${product.price}KR</h4>
                 <p>${product.about}</p>
-                <button onclick="addToCart()">add To cart</button>
+                <button onclick="addToCart(${product.id}, '${product.name}', ${product.price})">add To cart</button>
             </div>
             `;
     }
@@ -26,35 +25,41 @@ fetch("products.json", {
     placeholder.innerHTML = out
 })
 
-const addToCart = ((itemName, itemPrice) => {
-    var item = {name: itemName, price: itemPrice}
+function addToCart(id, name, price) {
+    var item = {id: id, name: name, price: price}
     cart.push(item)
     console.log("item has been added to cart", item);
-});
+}
+
+function removeFromCart(id) {
+    console.log(id);
+    cart.splice(id - 1)
+}
 
 function openPopup() {
     console.log(cart);
     var popup = document.createElement("div");
-    var button = document.createElement("button")
+    var close = document.createElement("button")
     popup.className = "popUp"
-    button.innerHTML = "x"
-    button.className = "exit"
+    close.innerHTML = "x"
+    close.className = "exit"
 
-    popup.onclick = () => {
+    close.onclick = () => {
         popup.remove()
     }
 
     let out = ""
     for (const product of cart) {
-        console.log(product.name);
         out += `
         <div class =""> 
             <h4>${product.name}</h4>
             <h4>${product.price}KR</h4>
+            <button onclick="removeFromCart(${product.id})">Remove</button> 
         </div>
         `
     }
+
     popup.innerHTML = out // displays the cart inventory  
-    popup.appendChild(button)
+    popup.appendChild(close)
     document.body.appendChild(popup);
   }
