@@ -1,4 +1,3 @@
-
 var cart = []; //init cart // change to map 
 var items;   
 var totalPrice = 0
@@ -15,6 +14,7 @@ fetch("products.json", {
 })
 
 function displayItems() {
+    document.getElementById("container").innerHTML = ""
     var row = document.createElement("div")
     row.className = "row"
 
@@ -26,7 +26,6 @@ function displayItems() {
             var row = document.createElement("div")
             row.className = "row"
             i = 0;
-            console.log(row);
             out = ""
         }
         out += `
