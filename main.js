@@ -30,7 +30,7 @@ function displayItems() {
             out = ""
         }
         out += `
-        <div class ="card" style="width:18rem;">
+        <div class ="card w-25 p-3" style="">
             <div class="col-sm" onclick="details(${product.id})"> 
                 <img src="${imageURL}${randomSize()}" class="card-img-top">
                 <div class="card-body"> 
@@ -85,7 +85,9 @@ function removeFromCart(id) {
         }
       });
       console.log(cart);
-    document.getElementById("sum").innerHTML = totalPrice;
+      var text = "total: "
+      finalPrice = text.concat(totalPrice)
+    document.getElementById("sum").innerHTML = finalPrice;
 }
 
 function filterUp() {
@@ -145,6 +147,7 @@ function details(id) {
 }
 
 function openPopup() {
+    console.log(cart);
     var popup = document.createElement("div");
     var close = document.createElement("button")
     var itemList = document.createElement("div")
@@ -158,22 +161,26 @@ function openPopup() {
         popup.remove()
     }
     let out = ""
+    totalPrice = 0
     cart.forEach(function(value, key) {
-        console.log(`${key}: ${value}`);
         if(items[key - 1].id == key){
-            var product = items[key - 1]
-            totalPrice += product.price  * value
-            out += `
-            <div class ="" id="${product.id}cashout"> 
-            <h4>${product.name}</h4>
-                <h4>${product.price}KR</h4>
-                <p id="${key}quantity">Quantity: ${value}<p>
-                <button onclick="removeFromCart(${product.id})">Remove</button> 
-                </div>
-                `
+            if (value != 0) {
+                var product = items[key - 1]
+                totalPrice += product.price  * value
+                out += `
+                <div class ="" id="${product.id}cashout"> 
+                <h4>${product.name}</h4>
+                    <h4>${product.price}KR</h4>
+                    <p id="${key}quantity">Quantity: ${value}<p>
+                    <button onclick="removeFromCart(${product.id})">Remove</button> 
+                    </div>
+                    `
+            }
         }
     });
-    sum.innerHTML = totalPrice
+    var text = "total: "
+    finalPrice = text.concat(totalPrice)
+    sum.innerHTML = finalPrice
     itemList.innerHTML = out // displays the cart inventory  
     popup.appendChild(close)
     popup.appendChild(itemList)
