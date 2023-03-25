@@ -1,6 +1,7 @@
-var cart = []; //init cart // change to map 
+var cart = new Map();
 var items;   
 var totalPrice = 0
+const imageURL = "https://source.unsplash.com/random/";
 
 fetch("products.json", {
     method: "GET",
@@ -29,13 +30,15 @@ function displayItems() {
             out = ""
         }
         out += `
-        <div class ="card w-25 h-25" >
+        <div class ="card" style="width:18rem;">
             <div class="col-sm" onclick="details(${product.id})"> 
-                <img src="${product.image}">
-                <h4>${product.name}</h4>
-                <h4>${product.price}KR</h4>
+                <img src="${imageURL}${randomSize()}" class="card-img-top">
+                <div class="card-body"> 
+                    <h4 class="card-title">${product.name}</h4>
+                    <h4 class="card-title">${product.price}KR</h4>
+                </div>
             </div>
-            <button onclick="addToCart(${product.id}, '${product.name}', ${product.price})">add To cart</button>
+            <button class="btn btn-primary" onclick="addToCart(${product.id})">add To cart</button>
         </div>
             `;
         i++;
@@ -44,26 +47,45 @@ function displayItems() {
     }
 } 
 
-function addToCart(id, name, price) {
-    var item = {id: id, name: name, price: price}
-    cart.push(item)
-    console.log("item has been added to cart", item);
+function randomSize() {
+    return `${randomNumber()}x${randomNumber()}/?books/`;
+}
+
+function randomNumber() {
+    return Math.floor(Math.random() * 10) + 300;    
+}
+
+function addToCart(id) {
+    if (cart.has(id)) {
+        cart.set(id, cart.get(id) + 1)
+    } else {
+        cart.set(id, 1)
+    }
+    console.log(cart);
+    cart.forEach(function(value, key) {
+        console.log(`${key}: ${value}`);
+      });
 }
 
 function removeFromCart(id) {
-    let i = 0
-    for (const product of cart) {
-        if (product.id == id) {
-            //remove
-            cart.splice(i, 1) // 1 means how many you delete if you leave empty it delets everything after selected index
-            totalPrice -= product.price
-            console.log(totalPrice, totalPrice + product.price);
-            console.log("removed: ", product);
+    cart.forEach(function(value, key) {
+        if(key == id) {
+            if(cart.get(id) == 0){
+                cart.delete(id)
+                document.getElementById(`${key}quantity`).innerHTML = `Quantity: ${value }`
+            } else if(cart.get(id) == 1){
+                cart.set(id, cart.get(id) - 1)
+                totalPrice -= items[id - 1].price
+                document.getElementById(`${key}cashout`).remove();
+            } else {
+                cart.set(id, cart.get(id) - 1)
+                totalPrice -= items[id - 1].price
+                document.getElementById(`${key}quantity`).innerHTML = `Quantity: ${value - 1}`
+            }
         }
-        i++;
-    }
+      });
+      console.log(cart);
     document.getElementById("sum").innerHTML = totalPrice;
-    document.getElementById(id).remove();
 }
 
 function filterUp() {
@@ -99,8 +121,7 @@ function details(id) {
     var itemList = document.createElement("div")
     popup.setAttribute("id", "popUp")
     popup.className = "popUp"
-    close.innerHTML = "x"
-    close.className = "exit"
+    close.className = "btn-close position-absolute top-0 end-0"
 
     close.onclick = () => {
         popup.remove()
@@ -124,7 +145,6 @@ function details(id) {
 }
 
 function openPopup() {
-    console.log(cart);
     var popup = document.createElement("div");
     var close = document.createElement("button")
     var itemList = document.createElement("div")
@@ -132,23 +152,27 @@ function openPopup() {
     sum.setAttribute("id", "sum")
     popup.setAttribute("id", "popUp")
     popup.className = "popUp"
-    close.innerHTML = "x"
-    close.className = "exit"
+    close.className = "btn-close position-absolute top-0 end-0"
     
     close.onclick = () => {
         popup.remove()
     }
     let out = ""
-    for (const product of cart) {
-        totalPrice += product.price
-        out += `
-        <div class ="" id="${product.id}"> 
-        <h4>${product.name}</h4>
-            <h4>${product.price}KR</h4>
-            <button onclick="removeFromCart(${product.id})">Remove</button> 
-            </div>
-            `
+    cart.forEach(function(value, key) {
+        console.log(`${key}: ${value}`);
+        if(items[key - 1].id == key){
+            var product = items[key - 1]
+            totalPrice += product.price  * value
+            out += `
+            <div class ="" id="${product.id}cashout"> 
+            <h4>${product.name}</h4>
+                <h4>${product.price}KR</h4>
+                <p id="${key}quantity">Quantity: ${value}<p>
+                <button onclick="removeFromCart(${product.id})">Remove</button> 
+                </div>
+                `
         }
+    });
     sum.innerHTML = totalPrice
     itemList.innerHTML = out // displays the cart inventory  
     popup.appendChild(close)
