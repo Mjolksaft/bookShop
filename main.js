@@ -81,6 +81,8 @@ function removeFromCart(id) {
                 cart.set(id, cart.get(id) - 1)
                 totalPrice -= items[id - 1].price
                 document.getElementById(`${key}quantity`).innerHTML = `Quantity: ${value - 1}`
+                console.log(value * items[key - 1].price);
+                document.getElementById(`${key}totalPrice`).innerHTML = `price: ${(value - 1) * items[key - 1].price}`
             }
         }
       });
@@ -172,6 +174,7 @@ function openPopup() {
                 <h4>${product.name}</h4>
                     <h4>${product.price}KR</h4>
                     <p id="${key}quantity">Quantity: ${value}<p>
+                    <p id="${key}totalPrice">price: ${value * product.price}<p>
                     <button onclick="removeFromCart(${product.id})">Remove</button> 
                     </div>
                     `
