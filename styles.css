@@ -8,12 +8,3 @@
     padding: 50px;
     z-index: 999;
   }
-  
-  .exit {
-    font-size: 30px;
-    border: hidden;
-    background: #fff;
-    position: absolute;
-    top: 0px;
-    right: 5px;
-  }

@@ -1,5 +1,6 @@
 var cart = new Map();
 var items;   
+var unFiltereditems;   
 var totalPrice = 0
 const imageURL = "https://source.unsplash.com/random/";
 
@@ -62,31 +63,27 @@ function addToCart(id) {
         cart.set(id, 1)
     }
     console.log(cart);
-    cart.forEach(function(value, key) {
-        console.log(`${key}: ${value}`);
-      });
 }
 
 function removeFromCart(id) {
     cart.forEach(function(value, key) {
         if(key == id) {
+            const item = items.find(items => items.id === key);
             if(cart.get(id) == 0){
                 cart.delete(id)
                 document.getElementById(`${key}quantity`).innerHTML = `Quantity: ${value }`
             } else if(cart.get(id) == 1){
                 cart.set(id, cart.get(id) - 1)
-                totalPrice -= items[id - 1].price
+                totalPrice -= item.price
                 document.getElementById(`${key}cashout`).remove();
             } else {
                 cart.set(id, cart.get(id) - 1)
-                totalPrice -= items[id - 1].price
+                totalPrice -= item.price
                 document.getElementById(`${key}quantity`).innerHTML = `Quantity: ${value - 1}`
-                console.log(value * items[key - 1].price);
                 document.getElementById(`${key}totalPrice`).innerHTML = `price: ${(value - 1) * items[key - 1].price}`
             }
         }
       });
-      console.log(cart);
       var text = "total: "
       finalPrice = text.concat(totalPrice)
     document.getElementById("sum").innerHTML = finalPrice;
@@ -113,10 +110,12 @@ function filterName() {
 }
 
 function filterNameReverse() {
+    console.log(items);
     items.sort(
         (a, b) => 
         b.name.localeCompare(a.name));
         displayItems()
+        console.log(items);
 }
 
 function details(id) {
@@ -149,7 +148,7 @@ function details(id) {
 }
 
 function openPopup() {
-    console.log(cart);
+    // console.log(items.get('1'));
     var popup = document.createElement("div");
     var close = document.createElement("button")
     var itemList = document.createElement("div")
@@ -165,9 +164,10 @@ function openPopup() {
     let out = ""
     totalPrice = 0
     cart.forEach(function(value, key) {
-        if(items[key - 1].id == key){
+        const item = items.find(items => items.id === key);
+        if(item.id == key){
             if (value != 0) {
-                var product = items[key - 1]
+                var product = item
                 totalPrice += product.price  * value
                 out += `
                 <div class ="" id="${product.id}cashout"> 
