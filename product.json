@@ -1,0 +1,144 @@
+[
+    {
+        "id": 1,
+        "image": "https://source.unsplash.com/random",
+        "name": "Responsive design with Bootstrap",
+        "price": "100",
+        "about": "Bootstrap is a free front-end development framework created by Twitter that has become very popular among developers. It is used to create responsive websites and web applications that can be accessed on various devices like desktops, laptops, tablets, and smartphones. This is made possible by using a grid system that allows developers to define the layout of their pages in a flexible and adaptable manner.Bootstrap provides many pre-built UI components, such as buttons, forms, and navigation menus, which can be customized to suit the specific needs of a project. This makes it easy to build professional-looking websites without having extensive coding or design skills.Another great feature of Bootstrap is its extensive documentation and community of developers. Developers can easily find answers to their questions and share their knowledge with others in the community. There are also many third-party plugins and extensions available for Bootstrap, which can add extra functionality to websites and applications.In summary, Bootstrap is a flexible and powerful framework that is preferred by many web developers. Its responsive design, pre-built components, and large community of developers make it an ideal choice for creating modern, mobile-first websites and applications. Whether you are a beginner or an experienced developer, Bootstrap is a useful tool that can help you create high-quality web experiences."
+    },
+    {
+        "id": 2,
+        "image": "https://source.unsplash.com/random",
+        "name": "HTML - an introduction",
+        "price": "300",
+        "about": "HTML, short for HyperText Markup Language, is a programming language used to create and organize web pages on the internet. It serves as the foundation for most websites and is considered a must-know tool for any web developer.HTML utilizes a markup language consisting of tags that dictate how content is displayed on a webpage. These tags can be used to structure text, incorporate images and videos, and establish links between pages. The language's simplicity allows beginners to easily pick it up while offering the power and flexibility necessary to support intricate websites.One of HTML's main benefits is its compatibility with other programming languages and technologies. It can be paired with CSS to add style and formatting to web pages, or combined with JavaScript to build interactive web applications. HTML is also compatible with various content management systems (CMS), allowing it to integrate seamlessly with platforms like WordPress or Shopify.HTML has undergone continuous evolution throughout the years, with new versions being periodically released. The latest version, HTML5, introduces numerous new features, including better multimedia support, enhanced mobile device compatibility, and new semantic tags that improve web page organization for search engines and accessibility.In summary, HTML is a crucial programming language for anyone involved in web development. Its simplicity and versatility have made it the standard for building websites, while its compatibility with other languages and technologies makes it a critical tool for constructing modern, interactive web applications. Regardless of experience level, learning HTML is a foundational step in the quest to create remarkable web experiences."
+    },
+    {
+        "id": 3,
+        "image": "https://source.unsplash.com/random",
+        "name": "CSS - an introduction",
+        "price": "220",
+        "about": "CSS, short for Cascading Style Sheets, is a programming language utilized to style and format web pages that have been created with HTML. CSS offers web developers the ability to control the visual appearance of a website, including the color and layout of text, images, and other media, and the positioning and sizing of each element.In practical terms, CSS works by defining a set of rules or instructions that determine how different elements on a web page should be displayed. These rules can be applied to individual elements or groups of elements, allowing for greater control and customization of the website's design.One of the primary benefits of CSS is its ability to separate the presentation of a website from its content. This means that developers can focus on creating the structure and content of a webpage using HTML, while CSS takes care of the design and formatting. This separation of concerns also makes it easier to maintain and update websites over time, as changes to the design can be made without affecting the underlying content.CSS also offers a wide range of features and tools to help developers create visually stunning and engaging websites. These include support for responsive design, which ensures that websites are optimized for different screen sizes and devices. CSS also provides animations and transitions that can add dynamic effects to web pages and support for custom fonts.Furthermore, CSS has continued to evolve over the years, with new versions being released periodically. CSS3, the latest version, includes many new features and capabilities, such as better support for custom fonts, new layout options, and advanced animation tools.In conclusion, CSS is a powerful programming language that is essential for creating visually appealing and engaging websites. Its ability to separate design from content, combined with its wide range of features and tools, make it an essential tool for web developers looking to create modern, responsive, and visually stunning websites. The language's continued development ensures that it will remain a vital component of web development for years to come."
+    },
+    {
+        "id": 4,
+        "image": "https://source.unsplash.com/random",
+        "name": "JavaScript - an introduction",
+        "price": "150",
+        "about": "JavaScript is a high-level programming language used primarily for web development. It is designed to add interactivity and dynamic behavior to websites and web applications, making them more engaging and responsive to user input. JavaScript is a versatile language that can be used for a variety of tasks, including form validation, interactive maps, animations, and more.One of the key features of JavaScript is its ability to manipulate the Document Object Model (DOM), which is the representation of a web page's HTML structure. By accessing and modifying the DOM, JavaScript can change the appearance and behavior of a web page without the need to reload the entire page. This allows for a smoother and more interactive user experience.JavaScript is also a client-side language, meaning that it runs in the browser rather than on a server. This allows for faster and more responsive web applications, as the browser can immediately execute JavaScript code without needing to wait for a server response.Another advantage of JavaScript is its extensive library of third-party frameworks and plugins, such as React, Angular, and jQuery. These frameworks provide pre-built components and functionality that can be easily integrated into a web application, saving developers time and effort.In addition to its use in web development, JavaScript is also used in server-side environments through platforms like Node.js. This allows developers to write JavaScript code for both the client and server sides of an application, simplifying the development process.In conclusion, JavaScript is a powerful and versatile language that plays a crucial role in web development. Its ability to manipulate the DOM, run in the browser, and integrate with third-party frameworks make it a valuable tool for building modern, interactive web applications."
+    },
+    {
+        "id": 5,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "350",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 6,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "100",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 7,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "300",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 8,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "220",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 9,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "150",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 10,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "350",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    }
+    ,
+    {
+        "id": 11,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "100",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 12,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "300",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 13,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "220",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 14,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "150",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 15,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "350",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    }
+    ,
+    {
+        "id": 16,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "100",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 17,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "300",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 18,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "220",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 19,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "150",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    },
+    {
+        "id": 20,
+        "image": "https://source.unsplash.com/random",
+        "name": "Lorem ipsum dolor sit amet,",
+        "price": "350",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl ac sodales blandit. Cras enim purus, rutrum a dictum sit amet, cursus eu massa. Mauris vel efficitur felis. Maecenas a malesuada enim. Pellentesque id iaculis tortor. Aenean sed ornare mauris. Aliquam ullamcorper lectus ante, ut fermentum ligula rutrum id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris facilisis hendrerit blandit. Morbi eu tincidunt nisl. Nunc est nisl, sollicitudin ac tellus vel, suscipit congue est. Curabitur rhoncus urna lectus, ac vestibulum lectus imperdiet et. Cras cursus, felis sed scelerisque fringilla, erat nunc rhoncus massa, vitae."
+    }
+]
